@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reaction Game</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Fira+Sans:wght@400;600&display=swap');
+
+    body {
+      background-color: #378673;
+      user-select: none;
+    }
+
+    .game-logo {
+      text-align: center;
+      font-family: 'Days One';
+      color: white;
+      font-size: 4rem;
+    }
+
+    main {
+      min-height: 16rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border-radius: 25px;
+      width: 60%;
+      margin: 0 auto;
+      padding: 10rem 0;
+      box-shadow: 0 0 0 4px black;
+    }
+
+    .game-description {
+      padding: 1rem 1rem;
+      font-size: 2.5rem;
+      text-align: center;
+      font-family: 'Fira Sans';
+    }
+
+    .str-button {
+      all: unset;
+      background-color: #378673;
+      color: white;
+      font-family: 'Fira Sans';
+      font-size: 3rem;
+      padding: 0.5rem 2rem;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .str-button:hover {
+      background-color: #509073;
+    }
+
+    .loading {
+      font-size: 8rem;
+      color: #378673;
+      font-weight: bold;
+      font-family: 'Fira Sans';
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="game-logo">REACTION GAME</h1>
+  <main id="telaPrincipal">
+    <p class="game-description">Press <b>SPACE</b> as fast as you can
+    when the color of the background
+    change to blue!</p>
+    <button class="str-button" id="strButton">START</button>
+  </main>
+
+  <script src="build/script.js"></script>
+</body>
+</html>
